@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACCDE85B1F6DC32200E706CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE8511F6DC32200E706CE /* Assets.xcassets */; };
+		ACCDE8681F6DC42B00E706CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8641F6DC42B00E706CE /* AppDelegate.swift */; };
+		ACCDE86E1F6DC58E00E706CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE86A1F6DC58E00E706CE /* LaunchScreen.storyboard */; };
+		ACCDE86F1F6DC58E00E706CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE86C1F6DC58E00E706CE /* Main.storyboard */; };
+		ACCDE8731F6DCA3000E706CE /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8721F6DCA3000E706CE /* NetworkingProvider.swift */; };
+		ACCDE8791F6DCAB000E706CE /* BusinessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8761F6DCAB000E706CE /* BusinessError.swift */; };
+		ACCDE87A1F6DCAB000E706CE /* TechnicalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8771F6DCAB000E706CE /* TechnicalError.swift */; };
+		ACCDE87B1F6DCAB000E706CE /* HandleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8781F6DCAB000E706CE /* HandleError.swift */; };
+		ACCDE87D1F6DCBC300E706CE /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE87C1F6DCBC300E706CE /* APIProvider.swift */; };
+		ACCDE8801F6DCD3000E706CE /* TicketsAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE87F1F6DCD3000E706CE /* TicketsAPIProvider.swift */; };
+		ACCDE8821F6DCD7B00E706CE /* TicketsAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8811F6DCD7B00E706CE /* TicketsAPIProtocol.swift */; };
+		ACCDE8851F6DD2EE00E706CE /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8841F6DD2EE00E706CE /* StringExtension.swift */; };
+		ACCDE8881F6DDFCD00E706CE /* TicketsBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8871F6DDFCD00E706CE /* TicketsBusiness.swift */; };
+		ACCDE88A1F6DE04E00E706CE /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8891F6DE04E00E706CE /* Ticket.swift */; };
+		ACCDE88F1F6DF53600E706CE /* TicketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE88E1F6DF53600E706CE /* TicketsTableViewController.swift */; };
+		ACCDE8931F6DF5B800E706CE /* TicketsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8921F6DF5B800E706CE /* TicketsTableView.swift */; };
+		ACCDE8951F6DF5D000E706CE /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8941F6DF5D000E706CE /* TicketTableViewCell.swift */; };
+		ACCDE8971F6DF5F900E706CE /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8961F6DF5F900E706CE /* TicketViewModel.swift */; };
+		ACCDE8991F6DF6EF00E706CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE8981F6DF6EF00E706CE /* Localizable.strings */; };
+		ACCDE89D1F6DFA6F00E706CE /* ViewCustomizableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE89C1F6DFA6F00E706CE /* ViewCustomizableProtocol.swift */; };
+		ACCDE89F1F6DFAD900E706CE /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE89E1F6DFAD900E706CE /* LocalizableStrings.swift */; };
+		ACCDE8A11F6E0B9800E706CE /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8A01F6E0B9800E706CE /* Status.swift */; };
+		ACCDE8AC1F6E1B4100E706CE /* TicketsMockAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8AB1F6E1B4100E706CE /* TicketsMockAPIProvider.swift */; };
+		ACCDE8AE1F6E1B9300E706CE /* tickets.json in Resources */ = {isa = PBXBuildFile; fileRef = ACCDE8AD1F6E1B9300E706CE /* tickets.json */; };
+		ACCDE8B01F6E1BD000E706CE /* TicketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDE8AF1F6E1BD000E706CE /* TicketsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACCDE82E1F6DC23B00E706CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACCDE8111F6DC23A00E706CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCDE8181F6DC23A00E706CE;
+			remoteInfo = ZTickets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACCDE8191F6DC23A00E706CE /* ZTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCDE82D1F6DC23B00E706CE /* ZTicketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTicketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCDE8511F6DC32200E706CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACCDE8641F6DC42B00E706CE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACCDE86B1F6DC58E00E706CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACCDE86D1F6DC58E00E706CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACCDE8721F6DCA3000E706CE /* NetworkingProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		ACCDE8761F6DCAB000E706CE /* BusinessError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessError.swift; sourceTree = "<group>"; };
+		ACCDE8771F6DCAB000E706CE /* TechnicalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalError.swift; sourceTree = "<group>"; };
+		ACCDE8781F6DCAB000E706CE /* HandleError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandleError.swift; sourceTree = "<group>"; };
+		ACCDE87C1F6DCBC300E706CE /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
+		ACCDE87F1F6DCD3000E706CE /* TicketsAPIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsAPIProvider.swift; sourceTree = "<group>"; };
+		ACCDE8811F6DCD7B00E706CE /* TicketsAPIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsAPIProtocol.swift; sourceTree = "<group>"; };
+		ACCDE8841F6DD2EE00E706CE /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		ACCDE8871F6DDFCD00E706CE /* TicketsBusiness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsBusiness.swift; sourceTree = "<group>"; };
+		ACCDE8891F6DE04E00E706CE /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		ACCDE88E1F6DF53600E706CE /* TicketsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableViewController.swift; sourceTree = "<group>"; };
+		ACCDE8921F6DF5B800E706CE /* TicketsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableView.swift; sourceTree = "<group>"; };
+		ACCDE8941F6DF5D000E706CE /* TicketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		ACCDE8961F6DF5F900E706CE /* TicketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
+		ACCDE8981F6DF6EF00E706CE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		ACCDE89C1F6DFA6F00E706CE /* ViewCustomizableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCustomizableProtocol.swift; sourceTree = "<group>"; };
+		ACCDE89E1F6DFAD900E706CE /* LocalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		ACCDE8A01F6E0B9800E706CE /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		ACCDE8A31F6E1A2C00E706CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCDE8A91F6E1A3A00E706CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCDE8AB1F6E1B4100E706CE /* TicketsMockAPIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsMockAPIProvider.swift; sourceTree = "<group>"; };
+		ACCDE8AD1F6E1B9300E706CE /* tickets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tickets.json; sourceTree = "<group>"; };
+		ACCDE8AF1F6E1BD000E706CE /* TicketsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACCDE8161F6DC23A00E706CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCDE82A1F6DC23B00E706CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACCDE8101F6DC23A00E706CE = {
+			isa = PBXGroup;
+			children = (
+				ACCDE81B1F6DC23A00E706CE /* ZTickets */,
+				ACCDE8301F6DC23B00E706CE /* ZTicketsTests */,
+				ACCDE81A1F6DC23A00E706CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACCDE81A1F6DC23A00E706CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8191F6DC23A00E706CE /* ZTickets.app */,
+				ACCDE82D1F6DC23B00E706CE /* ZTicketsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACCDE81B1F6DC23A00E706CE /* ZTickets */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8561F6DC32200E706CE /* Source */,
+				ACCDE8501F6DC32200E706CE /* Resource */,
+			);
+			path = ZTickets;
+			sourceTree = "<group>";
+		};
+		ACCDE8301F6DC23B00E706CE /* ZTicketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8A51F6E1A2C00E706CE /* Source */,
+				ACCDE8A21F6E1A2C00E706CE /* Resource */,
+			);
+			path = ZTicketsTests;
+			sourceTree = "<group>";
+		};
+		ACCDE8501F6DC32200E706CE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8A91F6E1A3A00E706CE /* Info.plist */,
+				ACCDE8511F6DC32200E706CE /* Assets.xcassets */,
+				ACCDE8981F6DF6EF00E706CE /* Localizable.strings */,
+				ACCDE8691F6DC58E00E706CE /* Storyboads */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ACCDE8561F6DC32200E706CE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8671F6DC42B00E706CE /* View */,
+				ACCDE8621F6DC42B00E706CE /* Controller */,
+				ACCDE8611F6DC42B00E706CE /* Business */,
+				ACCDE8661F6DC42B00E706CE /* Provider */,
+				ACCDE8651F6DC42B00E706CE /* Model */,
+				ACCDE8631F6DC42B00E706CE /* Infrastructure */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ACCDE8611F6DC42B00E706CE /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8861F6DDFAD00E706CE /* Tickets */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		ACCDE8621F6DC42B00E706CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE88B1F6DF50800E706CE /* Tickets */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACCDE8631F6DC42B00E706CE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE89A1F6DFA4D00E706CE /* Enum */,
+				ACCDE89B1F6DFA4D00E706CE /* Protocol */,
+				ACCDE8831F6DD2E200E706CE /* Extension */,
+				ACCDE8741F6DCAB000E706CE /* ErrorHandling */,
+				ACCDE8641F6DC42B00E706CE /* AppDelegate.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		ACCDE8651F6DC42B00E706CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8891F6DE04E00E706CE /* Ticket.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACCDE8661F6DC42B00E706CE /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8701F6DCA2500E706CE /* API */,
+				ACCDE8711F6DCA2500E706CE /* Networking */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		ACCDE8671F6DC42B00E706CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE88C1F6DF51100E706CE /* Tickets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACCDE8691F6DC58E00E706CE /* Storyboads */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE86A1F6DC58E00E706CE /* LaunchScreen.storyboard */,
+				ACCDE86C1F6DC58E00E706CE /* Main.storyboard */,
+			);
+			path = Storyboads;
+			sourceTree = "<group>";
+		};
+		ACCDE8701F6DCA2500E706CE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE87C1F6DCBC300E706CE /* APIProvider.swift */,
+				ACCDE87E1F6DCCF300E706CE /* Tickets */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ACCDE8711F6DCA2500E706CE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8721F6DCA3000E706CE /* NetworkingProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ACCDE8741F6DCAB000E706CE /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8751F6DCAB000E706CE /* ErrorTypes */,
+				ACCDE8781F6DCAB000E706CE /* HandleError.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		ACCDE8751F6DCAB000E706CE /* ErrorTypes */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8761F6DCAB000E706CE /* BusinessError.swift */,
+				ACCDE8771F6DCAB000E706CE /* TechnicalError.swift */,
+			);
+			path = ErrorTypes;
+			sourceTree = "<group>";
+		};
+		ACCDE87E1F6DCCF300E706CE /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE87F1F6DCD3000E706CE /* TicketsAPIProvider.swift */,
+				ACCDE8811F6DCD7B00E706CE /* TicketsAPIProtocol.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		ACCDE8831F6DD2E200E706CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8841F6DD2EE00E706CE /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ACCDE8861F6DDFAD00E706CE /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8871F6DDFCD00E706CE /* TicketsBusiness.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		ACCDE88B1F6DF50800E706CE /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE88E1F6DF53600E706CE /* TicketsTableViewController.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		ACCDE88C1F6DF51100E706CE /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8921F6DF5B800E706CE /* TicketsTableView.swift */,
+				ACCDE88D1F6DF51100E706CE /* Cell */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		ACCDE88D1F6DF51100E706CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8941F6DF5D000E706CE /* TicketTableViewCell.swift */,
+				ACCDE8961F6DF5F900E706CE /* TicketViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ACCDE89A1F6DFA4D00E706CE /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE89E1F6DFAD900E706CE /* LocalizableStrings.swift */,
+				ACCDE8A01F6E0B9800E706CE /* Status.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		ACCDE89B1F6DFA4D00E706CE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE89C1F6DFA6F00E706CE /* ViewCustomizableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		ACCDE8A21F6E1A2C00E706CE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8A31F6E1A2C00E706CE /* Info.plist */,
+				ACCDE8A41F6E1A2C00E706CE /* MockingFiles */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ACCDE8A41F6E1A2C00E706CE /* MockingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8AD1F6E1B9300E706CE /* tickets.json */,
+			);
+			path = MockingFiles;
+			sourceTree = "<group>";
+		};
+		ACCDE8A51F6E1A2C00E706CE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8A71F6E1A2C00E706CE /* Tests */,
+				ACCDE8A61F6E1A2C00E706CE /* MockProviders */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ACCDE8A61F6E1A2C00E706CE /* MockProviders */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8AB1F6E1B4100E706CE /* TicketsMockAPIProvider.swift */,
+			);
+			path = MockProviders;
+			sourceTree = "<group>";
+		};
+		ACCDE8A71F6E1A2C00E706CE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDE8AF1F6E1BD000E706CE /* TicketsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACCDE8181F6DC23A00E706CE /* ZTickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCDE8411F6DC23B00E706CE /* Build configuration list for PBXNativeTarget "ZTickets" */;
+			buildPhases = (
+				ACCDE8151F6DC23A00E706CE /* Sources */,
+				ACCDE8161F6DC23A00E706CE /* Frameworks */,
+				ACCDE8171F6DC23A00E706CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZTickets;
+			productName = ZTickets;
+			productReference = ACCDE8191F6DC23A00E706CE /* ZTickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACCDE82C1F6DC23B00E706CE /* ZTicketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCDE8441F6DC23B00E706CE /* Build configuration list for PBXNativeTarget "ZTicketsTests" */;
+			buildPhases = (
+				ACCDE8291F6DC23B00E706CE /* Sources */,
+				ACCDE82A1F6DC23B00E706CE /* Frameworks */,
+				ACCDE82B1F6DC23B00E706CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCDE82F1F6DC23B00E706CE /* PBXTargetDependency */,
+			);
+			name = ZTicketsTests;
+			productName = ZTicketsTests;
+			productReference = ACCDE82D1F6DC23B00E706CE /* ZTicketsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACCDE8111F6DC23A00E706CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Guest User";
+				TargetAttributes = {
+					ACCDE8181F6DC23A00E706CE = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					ACCDE82C1F6DC23B00E706CE = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ACCDE8181F6DC23A00E706CE;
+					};
+				};
+			};
+			buildConfigurationList = ACCDE8141F6DC23A00E706CE /* Build configuration list for PBXProject "ZTickets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACCDE8101F6DC23A00E706CE;
+			productRefGroup = ACCDE81A1F6DC23A00E706CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACCDE8181F6DC23A00E706CE /* ZTickets */,
+				ACCDE82C1F6DC23B00E706CE /* ZTicketsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACCDE8171F6DC23A00E706CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCDE86F1F6DC58E00E706CE /* Main.storyboard in Resources */,
+				ACCDE8991F6DF6EF00E706CE /* Localizable.strings in Resources */,
+				ACCDE85B1F6DC32200E706CE /* Assets.xcassets in Resources */,
+				ACCDE86E1F6DC58E00E706CE /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCDE82B1F6DC23B00E706CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCDE8AE1F6E1B9300E706CE /* tickets.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACCDE8151F6DC23A00E706CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCDE88A1F6DE04E00E706CE /* Ticket.swift in Sources */,
+				ACCDE87A1F6DCAB000E706CE /* TechnicalError.swift in Sources */,
+				ACCDE8731F6DCA3000E706CE /* NetworkingProvider.swift in Sources */,
+				ACCDE8791F6DCAB000E706CE /* BusinessError.swift in Sources */,
+				ACCDE8801F6DCD3000E706CE /* TicketsAPIProvider.swift in Sources */,
+				ACCDE8A11F6E0B9800E706CE /* Status.swift in Sources */,
+				ACCDE8681F6DC42B00E706CE /* AppDelegate.swift in Sources */,
+				ACCDE8931F6DF5B800E706CE /* TicketsTableView.swift in Sources */,
+				ACCDE8951F6DF5D000E706CE /* TicketTableViewCell.swift in Sources */,
+				ACCDE89D1F6DFA6F00E706CE /* ViewCustomizableProtocol.swift in Sources */,
+				ACCDE8881F6DDFCD00E706CE /* TicketsBusiness.swift in Sources */,
+				ACCDE8851F6DD2EE00E706CE /* StringExtension.swift in Sources */,
+				ACCDE87B1F6DCAB000E706CE /* HandleError.swift in Sources */,
+				ACCDE8821F6DCD7B00E706CE /* TicketsAPIProtocol.swift in Sources */,
+				ACCDE88F1F6DF53600E706CE /* TicketsTableViewController.swift in Sources */,
+				ACCDE87D1F6DCBC300E706CE /* APIProvider.swift in Sources */,
+				ACCDE89F1F6DFAD900E706CE /* LocalizableStrings.swift in Sources */,
+				ACCDE8971F6DF5F900E706CE /* TicketViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCDE8291F6DC23B00E706CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCDE8AC1F6E1B4100E706CE /* TicketsMockAPIProvider.swift in Sources */,
+				ACCDE8B01F6E1BD000E706CE /* TicketsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACCDE82F1F6DC23B00E706CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCDE8181F6DC23A00E706CE /* ZTickets */;
+			targetProxy = ACCDE82E1F6DC23B00E706CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACCDE86A1F6DC58E00E706CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCDE86B1F6DC58E00E706CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ACCDE86C1F6DC58E00E706CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCDE86D1F6DC58E00E706CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACCDE83F1F6DC23B00E706CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACCDE8401F6DC23B00E706CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACCDE8421F6DC23B00E706CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ZTickets/Resource/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Salmo-Junior.ZTickets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ACCDE8431F6DC23B00E706CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ZTickets/Resource/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Salmo-Junior.ZTickets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		ACCDE8451F6DC23B00E706CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ZTicketsTests/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Salmo-Junior.ZTicketsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTickets.app/ZTickets";
+			};
+			name = Debug;
+		};
+		ACCDE8461F6DC23B00E706CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = ZTicketsTests/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Salmo-Junior.ZTicketsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTickets.app/ZTickets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACCDE8141F6DC23A00E706CE /* Build configuration list for PBXProject "ZTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCDE83F1F6DC23B00E706CE /* Debug */,
+				ACCDE8401F6DC23B00E706CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCDE8411F6DC23B00E706CE /* Build configuration list for PBXNativeTarget "ZTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCDE8421F6DC23B00E706CE /* Debug */,
+				ACCDE8431F6DC23B00E706CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCDE8441F6DC23B00E706CE /* Build configuration list for PBXNativeTarget "ZTicketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCDE8451F6DC23B00E706CE /* Debug */,
+				ACCDE8461F6DC23B00E706CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACCDE8111F6DC23A00E706CE /* Project object */;
+}
