@@ -11,5 +11,5 @@ A simple Support client app with tickets list using Zendesk Core [API](https://d
 
 ## Prerequisites
 
-* Xcode 8.3.3
-* Swift 3.1
+* Xcode 9
+* Swift 4
