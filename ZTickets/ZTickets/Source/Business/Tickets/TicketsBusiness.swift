@@ -44,15 +44,8 @@ struct TicketsBusiness {
                     return
                 }
                 
-                var tickets = [Ticket]()
-                
-                for ticketDic in ticketsDic {
-                    do {
-                        tickets.append(try Ticket(dictionary: ticketDic))
-                    } catch {
-                        continue
-                    }
-                }
+                let data: Data = try JSONSerialization.data(withJSONObject: ticketsDic, options: .prettyPrinted)
+                let tickets = try JSONDecoder().decode([Ticket].self, from: data)
                 
                 completion { tickets }
             } catch {

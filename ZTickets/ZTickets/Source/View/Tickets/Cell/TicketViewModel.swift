@@ -24,7 +24,7 @@ struct TicketViewModel {
         numberAttributedText = NSAttributedString(string: String(model.id))
         descriptionAttributedText = NSAttributedString(string: model.description)
         
-        if let status = model.status {
+        if let status = Status(rawValue: model.status) {
             statusAttributedText = NSAttributedString(string: status.rawValue)
             
             switch status {
