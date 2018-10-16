@@ -32,7 +32,7 @@ class TicketsTests: XCTestCase {
                 
                 XCTAssertEqual(firstTicket.id, 103, "Unexpected ticket Id")
                 XCTAssertEqual(firstTicket.subject, "Ticket : 99", "Unexpected ticket subject")
-                XCTAssertEqual(firstTicket.status, Status.new, "Unexpected ticket status")
+                XCTAssertEqual(firstTicket.status, Status.new.rawValue, "Unexpected ticket status")
                 XCTAssertEqual(firstTicket.description, "This is a test ticket", "Unexpected ticket description")
             } catch {
                 XCTFail("Failure to unwrap API provider response")
