@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode10
+xcode_project: ZTickets.xcodeproj
+xcode_scheme: ZTickets
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone 8
